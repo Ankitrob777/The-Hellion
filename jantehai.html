@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title> 💚Ankit is Explaining</title>
+    <style media="screen">
+      body {
+        background-color: whight;
+      }
+    </style>
+  </head>
+  <body >
+    <table cellspacing="20">
+      <tr>
+        <td>  <img src="a.png" alt="Ankit's profile picture"style="width:200px;height:200px;" ></td>
+        <td>  <h1>Ankit Mishra</h1>
+          <p><em>Machine Learning Engineer</em></p>
+          <p> Welcome Readers!</p>
+        </td>
+      </tr>
+    </table>
+    <hr>
+  <center><h3> K-Means Intuition:<br> Choosing the right Number <br> of Clusters</h3></center> <hr>
+    <p> So, Here I am going to explain how to choose right Number of clusters in k-means algorithm .<br>I will also talk about Elbow method and WCSS.  Send me your Feedback to robankit777@gmail.com. Lets start. </p>
+    <h1>Data science problem</h1>
+    <img src="b.png" alt="">
+    <hr>
+    <p> So, here we have got a data science problem.
+          We have got two variables .<br>I have taken only two variables just for understanding and simplicity.
+        <br>So,if i have to choose the number of cluster just by seeing the graph.<br>
+         I will defenetly choose 3.
+      and it will looks like this </p>
+    <img src="m.png" alt=""> <hr>
+    <p>Now, In order to understand whether our algorithm will take 2 clusters or 10, we use WCSS formula and graph.</p>
+    <img src="formula.png" alt="">
+    <p>Now, at first glance both name and formula of WCSS look a bit complex, but in reality it is super simple. WCSS stands
+      on <h2>Within Cluster Sum of Squares</h2> It measure the squared average distance of all the points within a cluster <br>
+      to the cluster centroid. In formula pi represent data points <br>
+      of cluster and c1 ,c2,c3 are centroids. To calculate <em>WCSS</em> <br>,we have to first find
+      Euclidean distance between a given point and the centroid to which it is assigned and square it. <br> Then we
+      iterate this process for all points in cluster and at last sum all the squared distances.</p> <hr>
+      <h3>Choosing one cluster</h3> <p>It will looks like this, <br>And Now we can find WCSS for One cluster by Formula.</p>
+        <img src="c.png" alt="">
+      <h3>On choosing Two cluster</h3>
+      <img src="d.png" alt="">
+      <p> Ok so finally we are at a point where we will know How our algorithm decide or choose number of Cluster</p>
+      <img src="g.png" alt="">
+      <p>This is a decreasing WCSS graph for dataset or datascience problem.<br>
+        this visual chart represent how WCSS changes as we increase the number of cluster. <br>
+        WCSS starts at quite a large Number. Now look at graph and how it changes <br>
+        it decreases from 8k to 3k just when we choosen 2 cluster thats massive.<br>
+        Later it jumps from 3k to 1k when 3 clusters choosen ,again a large drop,<br>
+       Now after that it goes from 1k to 800 then 700 and so on. As we can see first <br>
+     two changes created a huge drop in WCSS. And after that WCSS not drops at that rate(becomes linear approx)<br>
+   This is our hint to select optimal number of cluster. <br>
+ look for an Elbow in the graph and the bend point as shown in <br>
+graph is optimal number of clusters.  </p>
+<h1><em>Thanks</em></h1>
+
+
+
+
+  </body>
+</html>
